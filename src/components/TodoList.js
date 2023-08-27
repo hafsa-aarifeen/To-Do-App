@@ -16,6 +16,20 @@ function TodoList() {
         setTodos(newTodos);
     };
 
+    const updateTodo = (todoId, newValue) => {
+      if (!newValue.text || /^\s*$/.test(newValue.text)) {
+        return;
+      }
+  
+      setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item)));
+    };
+
+    const removeTodo = id => {
+      const removedArr = [...todos].filter(todo => todo.id !== id);
+  
+      setTodos(removedArr);
+    };
+
     const completeTodo = id => {
       let updatedTodos = todos.map(todo => {
         if (todo.id === id) {
@@ -33,6 +47,8 @@ function TodoList() {
         <Todo
         todos={todos}
         completeTodo={completeTodo}
+        removeTodo={removeTodo}
+        updateTodo={updateTodo}
       />
     </div>
   )
