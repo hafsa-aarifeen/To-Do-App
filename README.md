@@ -1,7 +1,3 @@
-![Screenshot (249)](https://github.com/hafsa-aarifeen/To-Do-App/assets/88127559/5b12d3b9-8971-4191-9533-a5705186456a)
-![Screenshot (252)](https://github.com/hafsa-aarifeen/To-Do-App/assets/88127559/26d82f0c-5156-407a-b4e2-ae4fca9aaaaf)
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
